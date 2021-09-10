@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<main>
+    <img src="https://images.vexels.com/media/users/3/144976/isolated/lists/5414db5acecc401e0fc4828d756dfb86-ilustracao-de-folha-verde.png" alt="logo de folha">
+    <fieldset>
+    <form action ="usuario/cadastro" method = "POST">
+        <label>Nome:</label>
+        <input type="text" name="usuario">
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Insira seu email">
+        </fieldset>
+
+        <fieldset>
+            <label>Escolha um Parque:</label>
+            <select name="color">
+                <option value="Parque Estadual da Cantareira">Parque Estadual da Cantareira</option>
+                <option value="Parque Horto Florestal">Parque Horto Florestal</option>
+                <option value="Parque Núcleo Engordados">Parque Núcleo Engordador</option>
+                <option value="Pico do Jaraguá">Pico do Jaraguá</option>
+                <option value="Parque das Águas Claras">Parque das Águas Claras</option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+        <label for ="comentario"> Porque você escolheu este?</label>
+        <textarea name="comentario" id="comentario">Comente</textarea>
+         </fieldset>
+        
+         <fieldset>
+            <label for="data">Data de Visitação:</label>
+            <input type="date" name="data" value="2021-07-22" min="2018-01-01" max="2022-12-31">
+        </fieldset>
+
+        <div>
+        <button type"reset">Cancelar</button>
+        <button type="submit">Enviar</button>
+        </div>
+        
+        </form>
+
+    </main>
+</body>
+</html>
